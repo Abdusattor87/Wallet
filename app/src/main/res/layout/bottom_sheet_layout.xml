@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="720dp"
+    android:orientation="vertical"
+    android:gravity="top"
+    android:background="@color/LayoutBackColor"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:drawablePadding="8dp"
+            android:text="Add Card" />
+
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/image_card"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@color/TransferButtonBackColor"
+            android:text="Add cards or accounts to Unipay to make secure payments in programs, websites and stores using blockchain technology."
+            android:textSize="14sp" />
+
+<!--Visa card-->
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="327dp"
+            android:layout_height="72dp"
+            android:gravity="center|start"
+            android:layout_gravity="center_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/icon"
+                    android:scaleType="centerInside" />
+
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:text="Visa" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/TransferButtonBackColor"
+                            android:text="Add a card of any bank" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="" />
+
+
+        </LinearLayout>
+
+        <!--Mili card-->
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="327dp"
+            android:layout_height="72dp"
+            android:gravity="center|start"
+            android:layout_gravity="center_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mili_icon"
+                    android:scaleType="centerInside"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Milli"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/TransferButtonBackColor"
+                            android:text="Connect your crypto wallet" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="" />
+
+
+        </LinearLayout>
+
+
+        <!--Master Card-->
+        <LinearLayout
+            android:id="@+id/LinearLayout3"
+            android:layout_width="327dp"
+            android:layout_height="72dp"
+            android:gravity="center|start"
+            android:layout_gravity="center_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/master_icon"
+                    android:scaleType="centerInside"
+                    android:foreground="?android:attr/selectableItemBackground"/>
+
+                <LinearLayout
+                    android:layout_width="199dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|start"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Master Card"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:textColor="@color/TransferButtonBackColor"
+                            android:text="Hold all payments via the app" />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ButtonAddCard"
+            android:layout_marginTop="115dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/buttons_add"
+            android:scaleType="centerInside"
+            android:layout_gravity="center_horizontal"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+
+</LinearLayout>

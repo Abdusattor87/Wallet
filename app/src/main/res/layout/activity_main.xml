@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LayoutBackColor"
+    android:gravity="center|top"
+    android:orientation="vertical">
+
+
+<!--Надпись Wallet-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/LayoutBackColor"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:id="@+id/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:drawablePadding="8dp"
+            android:text="Wallet" />
+
+    </LinearLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/LayoutBackColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/LayoutBackColor"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/teal_700">
+
+<!--        Add card-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LayoutBackColor"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                style="@style/СardviewStyle">
+
+            <ImageView
+                android:id="@+id/AddCardButton"
+                style="@style/ImageVieStyleAddcard"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/AddCardTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:drawablePadding="8dp"
+                android:text="Add card" />
+
+        </LinearLayout>
+
+
+        <!--        Transfer-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LayoutBackColor"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                style="@style/СardviewStyle">
+
+
+
+            <ImageView
+                android:id="@+id/TransferButton"
+                style="@style/ImageVieStyleTransfer" />
+
+        </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/TransferTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:drawablePadding="8dp"
+                android:text="Transfer to card" />
+
+        </LinearLayout>
+
+
+
+        <!--        Transfer-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/LayoutBackColor"
+            android:gravity="center"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                style="@style/СardviewStyle">
+
+                <ImageView
+                    android:id="@+id/DarkModeButton"
+                    style="@style/ImageVieStyleMoon"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/DarkTextView"
+                android:text="@string/DarkModeButtonText"
+                style="@style/DarkTextViewStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
